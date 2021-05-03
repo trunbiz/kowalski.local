@@ -36,9 +36,7 @@
       <excludeFolder url="file://$MODULE_DIR$/kaimonster/vendor/nesbot/carbon" />
       <excludeFolder url="file://$MODULE_DIR$/kaimonster/vendor/ramsey/collection" />
       <excludeFolder url="file://$MODULE_DIR$/kaimonster/vendor/ramsey/uuid" />
-      <excludeFolder url="file://$MODULE_DIR$/kaimonster/vendor/scrivo/highlight.php" />
       <excludeFolder url="file://$MODULE_DIR$/kaimonster/vendor/vlucas/phpdotenv" />
-      <excludeFolder url="file://$MODULE_DIR$/kaimonster/vendor/dnoegel/php-xdg-base-dir" />
       <excludeFolder url="file://$MODULE_DIR$/kaimonster/vendor/egulias/email-validator" />
       <excludeFolder url="file://$MODULE_DIR$/kaimonster/vendor/laravel/tinker" />
       <excludeFolder url="file://$MODULE_DIR$/kaimonster/vendor/laravel/framework" />
@@ -53,7 +51,6 @@
       <excludeFolder url="file://$MODULE_DIR$/kaimonster/vendor/phpunit/php-code-coverage" />
       <excludeFolder url="file://$MODULE_DIR$/kaimonster/vendor/phpunit/php-text-template" />
       <excludeFolder url="file://$MODULE_DIR$/kaimonster/vendor/phpunit/php-timer" />
-      <excludeFolder url="file://$MODULE_DIR$/kaimonster/vendor/phpunit/php-token-stream" />
       <excludeFolder url="file://$MODULE_DIR$/kaimonster/vendor/phpunit/php-file-iterator" />
       <excludeFolder url="file://$MODULE_DIR$/kaimonster/vendor/symfony/event-dispatcher-contracts" />
       <excludeFolder url="file://$MODULE_DIR$/kaimonster/vendor/symfony/http-kernel" />
@@ -110,6 +107,11 @@
       <excludeFolder url="file://$MODULE_DIR$/kaimonster/vendor/guzzlehttp/psr7" />
       <excludeFolder url="file://$MODULE_DIR$/kaimonster/vendor/jason-guru/laravel-make-repository" />
       <excludeFolder url="file://$MODULE_DIR$/kaimonster/vendor/nunomaduro/collision" />
+      <excludeFolder url="file://$MODULE_DIR$/kaimonster/vendor/phpunit/php-invoker" />
+      <excludeFolder url="file://$MODULE_DIR$/kaimonster/vendor/sebastian/complexity" />
+      <excludeFolder url="file://$MODULE_DIR$/kaimonster/vendor/sebastian/cli-parser" />
+      <excludeFolder url="file://$MODULE_DIR$/kaimonster/vendor/sebastian/lines-of-code" />
+      <excludeFolder url="file://$MODULE_DIR$/kaimonster/vendor/sebastian/code-unit" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
