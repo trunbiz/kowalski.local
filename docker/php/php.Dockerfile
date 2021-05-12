@@ -25,6 +25,15 @@ RUN curl -sL https://deb.nodesource.com/setup_14.x | bash - \
 
 RUN cp "$PHP_INI_DIR/php.ini-development" "$PHP_INI_DIR/php.ini"
 
+# Clear cache
+RUN apt-get clean && rm -rf /var/lib/apt/lists/*
+
+# Install zsh
+RUN sh -c "$(curl https://raw.githubusercontent.com/deluan/zsh-in-docker/master/zsh-in-docker.sh)" -- \
+  -t ys \
+  -p https://github.com/zsh-users/zsh-syntax-highlighting \
+  -p https://github.com/zsh-users/zsh-history-substring-search
+
 #ADD etc/docker-php.ini $PHP_INI_DIR/conf.d/
 #ADD etc/docker-php-xdebug.ini $PHP_INI_DIR/conf.d/zz-xdebug-settings.ini
 #
