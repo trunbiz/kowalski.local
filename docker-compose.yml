@@ -22,17 +22,19 @@ services:
     image: mysql:8.0
     container_name: mysql
     command: --default-authentication-plugin=mysql_native_password
-#    restart: 'on-failure'
-    restart: unless-stopped
+    restart: 'on-failure'
+#    restart: unless-stopped
     tty: true
     environment:
       MYSQL_ALLOW_EMPTY_PASSWORD: "false"
       MYSQL_ROOT_PASSWORD: "root"
       MYSQL_DATABASE: "kai_db"
+#      MYSQL_USER: "trunbiz"
+#      MYSQL_PASSWORD: "trunbiz@98"
     volumes:
       - "./docker/mysql/db:/var/lib/mysql"
-#      - "./docker/mysql/custom.cnf:/etc/mysql/conf.d/mysql.cnf"
-#      - "./docker/mysql/query.log:/var/log/query.log"
+      - "./docker/mysql/custom.cnf:/etc/mysql/conf.d/mysql.cnf"
+      - "./docker/mysql/query.log:/var/log/query.log"
       - "./kaimonster:/var/www/html"
     ports:
     - "3306:3306"
@@ -49,3 +51,28 @@ services:
     container_name: redis
     hostname: redis
     restart: 'on-failure'
+  zookeeper:
+    image: wurstmeister/zookeeper
+    container_name: zookeeper
+    ports:
+      - "2181:2181"
+    volumes:
+      - /docker/data/zookeeper:/opt/zookeeper*
+  kafka:
+    image: wurstmeister/kafka
+    container_name: kafka
+    ports:
+      - "9092:9092"
+    environment:
+      KAFKA_ADVERTISED_HOST_NAME: 127.0.0.1
+      KAFKA_ZOOKEEPER_CONNECT: zookeeper:2181
+#      HOSTNAME_COMMAND: "echo $$(hostname)"
+#      BROKER_ID_COMMAND: "docker inspect --format '{{ .Name }}' $$(hostname) | awk -F_ '{ printf $$NF }'"
+#      KAFKA_ADVERTISED_HOST_NAME: <ip-address>
+#      KAFKA_ZOOKEEPER_CONNECT: zookeeper:2181
+#      KAFKA_CREATE_TOPICS: "Topic1:3:2,Topic2:2:2"
+    volumes:
+      - /docker/var/run/docker.sock:/var/run/docker.sock
+      - /docker/data/kafka:/kafka
+    depends_on:
+      - zookeeper
