@@ -28,6 +28,10 @@ RUN cp "$PHP_INI_DIR/php.ini-development" "$PHP_INI_DIR/php.ini"
 # Clear cache
 RUN apt-get clean && rm -rf /var/lib/apt/lists/*
 
+# Install supervisor
+RUN apt-get update && apt-get install -y supervisor
+COPY ./supervisord.conf /etc/supervisor/conf.d/supervisord.conf
+
 # Install zsh
 RUN sh -c "$(curl https://raw.githubusercontent.com/deluan/zsh-in-docker/master/zsh-in-docker.sh)" -- \
   -t ys \
