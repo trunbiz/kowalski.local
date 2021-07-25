@@ -30,13 +30,19 @@ RUN apt-get clean && rm -rf /var/lib/apt/lists/*
 
 # Install supervisor
 RUN apt-get update && apt-get install -y supervisor
-COPY ./supervisord.conf /etc/supervisor/conf.d/supervisord.conf
+#COPY ./supervisord.conf /etc/supervisor/conf.d/supervisord.conf
 
 # Install zsh
 RUN sh -c "$(curl https://raw.githubusercontent.com/deluan/zsh-in-docker/master/zsh-in-docker.sh)" -- \
   -t ys \
   -p https://github.com/zsh-users/zsh-syntax-highlighting \
   -p https://github.com/zsh-users/zsh-history-substring-search
+
+## Install Kafka
+#RUN apt-get update && pecl install rdkafka
+
+
+COPY config/php.ini /usr/local/etc/php/
 
 #ADD etc/docker-php.ini $PHP_INI_DIR/conf.d/
 #ADD etc/docker-php-xdebug.ini $PHP_INI_DIR/conf.d/zz-xdebug-settings.ini

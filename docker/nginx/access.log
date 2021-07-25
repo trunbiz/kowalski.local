@@ -155,3 +155,4 @@
 172.20.0.1 - - [19/Jul/2021:16:47:45 +0000] "GET /asset/vendors/font-awesome/fonts/fontawesome-webfont.woff2?v=4.6.3 HTTP/1.1" 200 71896 "http://sino.local/asset/vendors/font-awesome/css/font-awesome.min.css" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36"
 172.20.0.1 - - [19/Jul/2021:16:48:05 +0000] "POST /register HTTP/1.1" 302 350 "http://sino.local/login" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36"
 172.20.0.1 - - [19/Jul/2021:16:48:05 +0000] "GET /login HTTP/1.1" 200 6985 "http://sino.local/login" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36"
+172.21.0.1 - - [24/Jul/2021:08:42:01 +0000] "GET / HTTP/1.1" 200 2544 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.164 Safari/537.36"
