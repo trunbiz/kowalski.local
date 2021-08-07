@@ -48,10 +48,14 @@ services:
 #    environment:
 #      PMA_HOST: mysql
   redis:
-    image: redis
+#    image: redis
+    image: redis:alpine
     container_name: redis
     hostname: redis
-    restart: 'on-failure'
+    expose:
+      - 6379
+    restart: always
+    command: redis-server --appendonly yes
   zookeeper:
 #    image: wurstmeister/zookeeper
     image: zookeeper
