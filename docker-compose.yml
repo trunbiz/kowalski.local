@@ -6,7 +6,7 @@ services:
       context: docker/php
       dockerfile: php.Dockerfile
     volumes:
-      - "./sino:/var/www/html"
+      - "./bomber:/var/www/html"
       - "./docker/php/supervisord.conf:/etc/supervisor/conf.d/supervisord.conf"
     tty: true
   nginx:
@@ -18,7 +18,7 @@ services:
     volumes:
     - "./docker/nginx/default.conf:/etc/nginx/conf.d/default.conf"
     - "./docker/nginx:/var/log/nginx/"
-    - "./sino:/var/www/html"
+    - "./bomber:/var/www/html"
   mysql:
     image: mysql:8.0
     container_name: mysql
@@ -29,14 +29,14 @@ services:
     environment:
       MYSQL_ALLOW_EMPTY_PASSWORD: "false"
       MYSQL_ROOT_PASSWORD: "root"
-      MYSQL_DATABASE: "sino_db"
+      MYSQL_DATABASE: "bomber_db"
 #      MYSQL_USER: "trunbiz"
 #      MYSQL_PASSWORD: "trunbiz@98"
     volumes:
       - "./docker/mysql/db:/var/lib/mysql"
       - "./docker/mysql/custom.cnf:/etc/mysql/conf.d/mysql.cnf"
       - "./docker/mysql/query.log:/var/log/query.log"
-      - "./sino:/var/www/html"
+      - "./bomber:/var/www/html"
     ports:
     - "3306:3306"
 #  phpmyadmin:
