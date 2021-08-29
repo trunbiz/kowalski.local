@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/kaiMonter.iml" filepath="$PROJECT_DIR$/.idea/kaiMonter.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/bomber.local.iml" filepath="$PROJECT_DIR$/.idea/bomber.local.iml" />
     </modules>
   </component>
 </project>
