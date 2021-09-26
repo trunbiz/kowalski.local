@@ -7,7 +7,7 @@ services:
       dockerfile: php.Dockerfile
     volumes:
       - "./bomber:/var/www/html/bomber"
-      - "./kaimonster:/var/www/html/kaimonster"
+      - "./rendervn:/var/www/html/rendervn"
       - "./docker/php/supervisord.conf:/etc/supervisor/conf.d/supervisord.conf"
     tty: true
   nginx:
@@ -18,10 +18,10 @@ services:
     - "443:443"
     volumes:
     - "./docker/nginx/default.conf:/etc/nginx/conf.d/default.conf"
-    - "./docker/nginx/kai.conf:/etc/nginx/conf.d/kai.conf"
+    - "./docker/nginx/render.conf:/etc/nginx/conf.d/render.conf"
     - "./docker/nginx:/var/log/nginx/"
     - "./bomber:/var/www/html/bomber"
-    - "./kaimonster:/var/www/html/kaimonster"
+    - "./rendervn:/var/www/html/rendervn"
   mysql:
     image: mysql:8.0
     container_name: mysql
@@ -39,7 +39,7 @@ services:
       - "./docker/mysql/db:/var/lib/mysql"
       - "./docker/mysql/custom.cnf:/etc/mysql/conf.d/mysql.cnf"
       - "./docker/mysql/query.log:/var/log/query.log"
-      - "./bomber:/var/www/html"
+      - "./bomber:/var/www/html/bomber"
     ports:
     - "3306:3306"
 #  phpmyadmin:
