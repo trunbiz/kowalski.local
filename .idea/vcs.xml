@@ -4,6 +4,7 @@
     <mapping directory="$PROJECT_DIR$" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/bomber" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/kaimonster" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/sino" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/project/bomber" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/rendervn" vcs="Git" />
   </component>
 </project>
