@@ -126,6 +126,16 @@
       <path value="$PROJECT_DIR$/bomber/vendor/firebase/php-jwt" />
       <path value="$PROJECT_DIR$/bomber/vendor/nao-pon/flysystem-google-drive" />
       <path value="$PROJECT_DIR$/bomber/vendor/nao-pon/flysystem-cached-extra" />
+      <path value="$PROJECT_DIR$/bomber/vendor/web-token/jwt-util-ecc" />
+      <path value="$PROJECT_DIR$/bomber/vendor/web-token/jwt-core" />
+      <path value="$PROJECT_DIR$/bomber/vendor/web-token/jwt-key-mgmt" />
+      <path value="$PROJECT_DIR$/bomber/vendor/web-token/jwt-signature" />
+      <path value="$PROJECT_DIR$/bomber/vendor/web-token/jwt-signature-algorithm-ecdsa" />
+      <path value="$PROJECT_DIR$/bomber/vendor/spomky-labs/base64url" />
+      <path value="$PROJECT_DIR$/bomber/vendor/laravel-notification-channels/webpush" />
+      <path value="$PROJECT_DIR$/bomber/vendor/minishlink/web-push" />
+      <path value="$PROJECT_DIR$/bomber/vendor/fgrosse/phpasn1" />
+      <path value="$PROJECT_DIR$/bomber/vendor/psr/http-factory" />
     </include_path>
   </component>
   <component name="PhpUnit">
