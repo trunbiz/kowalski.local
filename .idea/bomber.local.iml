@@ -19,6 +19,7 @@
       <excludeFolder url="file://$MODULE_DIR$/bomber/vendor/facade/ignition" />
       <excludeFolder url="file://$MODULE_DIR$/bomber/vendor/facade/ignition-contracts" />
       <excludeFolder url="file://$MODULE_DIR$/bomber/vendor/fakerphp/faker" />
+      <excludeFolder url="file://$MODULE_DIR$/bomber/vendor/fgrosse/phpasn1" />
       <excludeFolder url="file://$MODULE_DIR$/bomber/vendor/fideloper/proxy" />
       <excludeFolder url="file://$MODULE_DIR$/bomber/vendor/filp/whoops" />
       <excludeFolder url="file://$MODULE_DIR$/bomber/vendor/firebase/php-jwt" />
@@ -31,6 +32,7 @@
       <excludeFolder url="file://$MODULE_DIR$/bomber/vendor/guzzlehttp/psr7" />
       <excludeFolder url="file://$MODULE_DIR$/bomber/vendor/hamcrest/hamcrest-php" />
       <excludeFolder url="file://$MODULE_DIR$/bomber/vendor/jason-guru/laravel-make-repository" />
+      <excludeFolder url="file://$MODULE_DIR$/bomber/vendor/laravel-notification-channels/webpush" />
       <excludeFolder url="file://$MODULE_DIR$/bomber/vendor/laravel/framework" />
       <excludeFolder url="file://$MODULE_DIR$/bomber/vendor/laravel/socialite" />
       <excludeFolder url="file://$MODULE_DIR$/bomber/vendor/laravel/tinker" />
@@ -40,6 +42,7 @@
       <excludeFolder url="file://$MODULE_DIR$/bomber/vendor/league/flysystem-cached-adapter" />
       <excludeFolder url="file://$MODULE_DIR$/bomber/vendor/league/mime-type-detection" />
       <excludeFolder url="file://$MODULE_DIR$/bomber/vendor/league/oauth1-client" />
+      <excludeFolder url="file://$MODULE_DIR$/bomber/vendor/minishlink/web-push" />
       <excludeFolder url="file://$MODULE_DIR$/bomber/vendor/mockery/mockery" />
       <excludeFolder url="file://$MODULE_DIR$/bomber/vendor/monolog/monolog" />
       <excludeFolder url="file://$MODULE_DIR$/bomber/vendor/myclabs/deep-copy" />
@@ -72,6 +75,7 @@
       <excludeFolder url="file://$MODULE_DIR$/bomber/vendor/psr/container" />
       <excludeFolder url="file://$MODULE_DIR$/bomber/vendor/psr/event-dispatcher" />
       <excludeFolder url="file://$MODULE_DIR$/bomber/vendor/psr/http-client" />
+      <excludeFolder url="file://$MODULE_DIR$/bomber/vendor/psr/http-factory" />
       <excludeFolder url="file://$MODULE_DIR$/bomber/vendor/psr/http-message" />
       <excludeFolder url="file://$MODULE_DIR$/bomber/vendor/psr/log" />
       <excludeFolder url="file://$MODULE_DIR$/bomber/vendor/psr/simple-cache" />
@@ -95,6 +99,7 @@
       <excludeFolder url="file://$MODULE_DIR$/bomber/vendor/sebastian/resource-operations" />
       <excludeFolder url="file://$MODULE_DIR$/bomber/vendor/sebastian/type" />
       <excludeFolder url="file://$MODULE_DIR$/bomber/vendor/sebastian/version" />
+      <excludeFolder url="file://$MODULE_DIR$/bomber/vendor/spomky-labs/base64url" />
       <excludeFolder url="file://$MODULE_DIR$/bomber/vendor/swiftmailer/swiftmailer" />
       <excludeFolder url="file://$MODULE_DIR$/bomber/vendor/symfony/console" />
       <excludeFolder url="file://$MODULE_DIR$/bomber/vendor/symfony/css-selector" />
@@ -129,6 +134,11 @@
       <excludeFolder url="file://$MODULE_DIR$/bomber/vendor/tymon/jwt-auth" />
       <excludeFolder url="file://$MODULE_DIR$/bomber/vendor/vlucas/phpdotenv" />
       <excludeFolder url="file://$MODULE_DIR$/bomber/vendor/voku/portable-ascii" />
+      <excludeFolder url="file://$MODULE_DIR$/bomber/vendor/web-token/jwt-core" />
+      <excludeFolder url="file://$MODULE_DIR$/bomber/vendor/web-token/jwt-key-mgmt" />
+      <excludeFolder url="file://$MODULE_DIR$/bomber/vendor/web-token/jwt-signature" />
+      <excludeFolder url="file://$MODULE_DIR$/bomber/vendor/web-token/jwt-signature-algorithm-ecdsa" />
+      <excludeFolder url="file://$MODULE_DIR$/bomber/vendor/web-token/jwt-util-ecc" />
       <excludeFolder url="file://$MODULE_DIR$/bomber/vendor/webmozart/assert" />
     </content>
     <orderEntry type="inheritedJdk" />
