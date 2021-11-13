@@ -1057,3 +1057,8 @@
 172.18.0.1 - - [12/Sep/2021:06:48:39 +0000] "GET /login HTTP/1.1" 200 5469 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.63 Safari/537.36"
 172.18.0.1 - - [12/Sep/2021:06:48:40 +0000] "GET /favicon.ico HTTP/1.1" 200 0 "http://bomber.local/login" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.63 Safari/537.36"
 172.18.0.1 - - [12/Sep/2021:06:48:42 +0000] "GET /auth/facebook HTTP/1.1" 302 1178 "http://bomber.local/login" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.63 Safari/537.36"
+172.18.0.1 - - [13/Nov/2021:04:51:29 +0000] "GET / HTTP/1.1" 404 555 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/95.0.4638.69 Safari/537.36"
+172.18.0.1 - - [13/Nov/2021:04:51:30 +0000] "GET /favicon.ico HTTP/1.1" 404 555 "http://kowalski.local/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/95.0.4638.69 Safari/537.36"
+172.18.0.1 - - [13/Nov/2021:04:53:39 +0000] "GET / HTTP/1.1" 200 2193 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/95.0.4638.69 Safari/537.36"
+172.18.0.1 - - [13/Nov/2021:04:53:39 +0000] "GET /asset/images/logo.png HTTP/1.1" 200 10794 "http://kowalski.local/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/95.0.4638.69 Safari/537.36"
+172.18.0.1 - - [13/Nov/2021:04:53:41 +0000] "GET /images/Bomber.png HTTP/1.1" 404 1564 "http://kowalski.local/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/95.0.4638.69 Safari/537.36"
