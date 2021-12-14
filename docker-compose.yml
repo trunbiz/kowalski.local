@@ -33,8 +33,8 @@ services:
       MYSQL_ALLOW_EMPTY_PASSWORD: "false"
       MYSQL_ROOT_PASSWORD: "root"
       MYSQL_DATABASE: "kowalski_db"
-      MYSQL_USER: "Trunbiz"
-      MYSQL_PASSWORD: "Trunbiz@98"
+#      MYSQL_USER: "Trunbiz"
+#      MYSQL_PASSWORD: "Trunbiz@98"
     volumes:
       - "./docker/mysql/db:/var/lib/mysql"
       - "./docker/mysql/custom.cnf:/etc/mysql/conf.d/mysql.cnf"
