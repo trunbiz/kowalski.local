@@ -5,6 +5,7 @@
 <hr>
 <ul>
 <li>B1: Cài đặt docker</li>
+<li>Tạo file source chứa code project năm ngoài kowalski.local</li>
 <li>B2: Chạy lệnh docker-compose build</li>
 <li>B3: Chạy lệnh docker-compose up (-d để chạy ngầm)</li>
 <li>B4: Chạy ./ssh.sh để sh vào project php</li>
