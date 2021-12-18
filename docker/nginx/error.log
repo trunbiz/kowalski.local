@@ -1151,3 +1151,52 @@
 2021/11/26 18:56:39 [notice] 1#1: start worker processes
 2021/11/26 18:56:39 [notice] 1#1: start worker process 30
 2021/11/26 18:56:39 [notice] 1#1: start worker process 31
+2021/12/17 16:15:38 [notice] 1#1: using the "epoll" event method
+2021/12/17 16:15:38 [notice] 1#1: nginx/1.21.4
+2021/12/17 16:15:38 [notice] 1#1: built by gcc 10.2.1 20210110 (Debian 10.2.1-6) 
+2021/12/17 16:15:38 [notice] 1#1: OS: Linux 5.10.76-linuxkit
+2021/12/17 16:15:38 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2021/12/17 16:15:38 [notice] 1#1: start worker processes
+2021/12/17 16:15:38 [notice] 1#1: start worker process 30
+2021/12/17 16:15:38 [notice] 1#1: start worker process 31
+2021/12/18 09:13:03 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2021/12/18 09:13:03 [notice] 30#30: gracefully shutting down
+2021/12/18 09:13:03 [notice] 31#31: gracefully shutting down
+2021/12/18 09:13:03 [notice] 30#30: exiting
+2021/12/18 09:13:03 [notice] 30#30: exit
+2021/12/18 09:13:03 [notice] 31#31: exiting
+2021/12/18 09:13:03 [notice] 31#31: exit
+2021/12/18 09:13:03 [notice] 1#1: signal 17 (SIGCHLD) received from 30
+2021/12/18 09:13:03 [notice] 1#1: worker process 30 exited with code 0
+2021/12/18 09:13:03 [notice] 1#1: signal 29 (SIGIO) received
+2021/12/18 09:13:03 [notice] 1#1: signal 17 (SIGCHLD) received from 31
+2021/12/18 09:13:03 [notice] 1#1: worker process 31 exited with code 0
+2021/12/18 09:13:03 [notice] 1#1: exit
+2021/12/18 09:14:13 [notice] 1#1: using the "epoll" event method
+2021/12/18 09:14:13 [notice] 1#1: nginx/1.21.4
+2021/12/18 09:14:13 [notice] 1#1: built by gcc 10.2.1 20210110 (Debian 10.2.1-6) 
+2021/12/18 09:14:13 [notice] 1#1: OS: Linux 5.10.76-linuxkit
+2021/12/18 09:14:13 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2021/12/18 09:14:13 [notice] 1#1: start worker processes
+2021/12/18 09:14:13 [notice] 1#1: start worker process 30
+2021/12/18 09:14:13 [notice] 1#1: start worker process 31
+2021/12/18 09:14:49 [error] 31#31: *2 FastCGI sent in stderr: "Primary script unknown" while reading response header from upstream, client: 172.18.0.1, server: render.local, request: "GET / HTTP/1.1", upstream: "fastcgi://172.18.0.6:9000", host: "render.local"
+2021/12/18 09:14:55 [error] 31#31: *2 FastCGI sent in stderr: "Primary script unknown" while reading response header from upstream, client: 172.18.0.1, server: render.local, request: "GET / HTTP/1.1", upstream: "fastcgi://172.18.0.6:9000", host: "render.local"
+2021/12/18 09:15:08 [error] 30#30: *9 FastCGI sent in stderr: "Primary script unknown" while reading response header from upstream, client: 172.18.0.1, server: render.local, request: "GET / HTTP/1.1", upstream: "fastcgi://172.18.0.6:9000", host: "render.local"
+2021/12/18 09:15:09 [error] 30#30: *9 FastCGI sent in stderr: "Primary script unknown" while reading response header from upstream, client: 172.18.0.1, server: render.local, request: "GET / HTTP/1.1", upstream: "fastcgi://172.18.0.6:9000", host: "render.local"
+2021/12/18 09:15:10 [error] 30#30: *9 FastCGI sent in stderr: "Primary script unknown" while reading response header from upstream, client: 172.18.0.1, server: render.local, request: "GET / HTTP/1.1", upstream: "fastcgi://172.18.0.6:9000", host: "render.local"
+2021/12/18 09:15:10 [error] 30#30: *9 FastCGI sent in stderr: "Primary script unknown" while reading response header from upstream, client: 172.18.0.1, server: render.local, request: "GET / HTTP/1.1", upstream: "fastcgi://172.18.0.6:9000", host: "render.local"
+2021/12/18 09:26:48 [error] 31#31: *18 FastCGI sent in stderr: "Primary script unknown" while reading response header from upstream, client: 172.18.0.1, server: render.local, request: "GET / HTTP/1.1", upstream: "fastcgi://172.18.0.6:9000", host: "render.local"
+2021/12/18 15:04:34 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2021/12/18 15:04:34 [notice] 30#30: gracefully shutting down
+2021/12/18 15:04:34 [notice] 30#30: exiting
+2021/12/18 15:04:34 [notice] 31#31: gracefully shutting down
+2021/12/18 15:04:34 [notice] 30#30: exit
+2021/12/18 15:04:34 [notice] 31#31: exiting
+2021/12/18 15:04:34 [notice] 31#31: exit
+2021/12/18 15:04:34 [notice] 1#1: signal 17 (SIGCHLD) received from 30
+2021/12/18 15:04:34 [notice] 1#1: worker process 30 exited with code 0
+2021/12/18 15:04:34 [notice] 1#1: signal 29 (SIGIO) received
+2021/12/18 15:04:34 [notice] 1#1: signal 17 (SIGCHLD) received from 31
+2021/12/18 15:04:34 [notice] 1#1: worker process 31 exited with code 0
+2021/12/18 15:04:34 [notice] 1#1: exit
