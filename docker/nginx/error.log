@@ -1200,3 +1200,103 @@
 2021/12/18 15:04:34 [notice] 1#1: signal 17 (SIGCHLD) received from 31
 2021/12/18 15:04:34 [notice] 1#1: worker process 31 exited with code 0
 2021/12/18 15:04:34 [notice] 1#1: exit
+2021/12/18 18:42:19 [notice] 1#1: using the "epoll" event method
+2021/12/18 18:42:19 [notice] 1#1: nginx/1.21.4
+2021/12/18 18:42:19 [notice] 1#1: built by gcc 10.2.1 20210110 (Debian 10.2.1-6) 
+2021/12/18 18:42:19 [notice] 1#1: OS: Linux 5.10.76-linuxkit
+2021/12/18 18:42:19 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2021/12/18 18:42:19 [notice] 1#1: start worker processes
+2021/12/18 18:42:19 [notice] 1#1: start worker process 30
+2021/12/18 18:42:19 [notice] 1#1: start worker process 31
+2021/12/18 18:51:44 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2021/12/18 18:51:44 [notice] 31#31: gracefully shutting down
+2021/12/18 18:51:44 [notice] 31#31: exiting
+2021/12/18 18:51:44 [notice] 31#31: exit
+2021/12/18 18:51:44 [notice] 30#30: gracefully shutting down
+2021/12/18 18:51:44 [notice] 30#30: exiting
+2021/12/18 18:51:44 [notice] 30#30: exit
+2021/12/18 18:51:44 [notice] 1#1: signal 17 (SIGCHLD) received from 30
+2021/12/18 18:51:44 [notice] 1#1: worker process 30 exited with code 0
+2021/12/18 18:51:44 [notice] 1#1: signal 29 (SIGIO) received
+2021/12/18 18:51:44 [notice] 1#1: signal 17 (SIGCHLD) received from 31
+2021/12/18 18:51:44 [notice] 1#1: worker process 31 exited with code 0
+2021/12/18 18:51:44 [notice] 1#1: exit
+2021/12/18 18:54:23 [notice] 1#1: using the "epoll" event method
+2021/12/18 18:54:23 [notice] 1#1: nginx/1.21.4
+2021/12/18 18:54:23 [notice] 1#1: built by gcc 10.2.1 20210110 (Debian 10.2.1-6) 
+2021/12/18 18:54:23 [notice] 1#1: OS: Linux 5.10.76-linuxkit
+2021/12/18 18:54:23 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2021/12/18 18:54:23 [notice] 1#1: start worker processes
+2021/12/18 18:54:23 [notice] 1#1: start worker process 30
+2021/12/18 18:54:23 [notice] 1#1: start worker process 31
+2021/12/18 19:01:44 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2021/12/18 19:01:44 [notice] 30#30: gracefully shutting down
+2021/12/18 19:01:44 [notice] 30#30: exiting
+2021/12/18 19:01:44 [notice] 31#31: gracefully shutting down
+2021/12/18 19:01:44 [notice] 31#31: exiting
+2021/12/18 19:01:44 [notice] 30#30: exit
+2021/12/18 19:01:44 [notice] 31#31: exit
+2021/12/18 19:01:44 [notice] 1#1: signal 17 (SIGCHLD) received from 31
+2021/12/18 19:01:44 [notice] 1#1: worker process 31 exited with code 0
+2021/12/18 19:01:44 [notice] 1#1: signal 29 (SIGIO) received
+2021/12/18 19:01:44 [notice] 1#1: signal 17 (SIGCHLD) received from 30
+2021/12/18 19:01:44 [notice] 1#1: worker process 30 exited with code 0
+2021/12/18 19:01:44 [notice] 1#1: exit
+2021/12/18 19:29:57 [notice] 1#1: using the "epoll" event method
+2021/12/18 19:29:57 [notice] 1#1: nginx/1.21.4
+2021/12/18 19:29:57 [notice] 1#1: built by gcc 10.2.1 20210110 (Debian 10.2.1-6) 
+2021/12/18 19:29:57 [notice] 1#1: OS: Linux 5.10.76-linuxkit
+2021/12/18 19:29:57 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2021/12/18 19:29:57 [notice] 1#1: start worker processes
+2021/12/18 19:29:57 [notice] 1#1: start worker process 30
+2021/12/18 19:29:57 [notice] 1#1: start worker process 31
+2021/12/18 19:40:20 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2021/12/18 19:40:20 [notice] 30#30: gracefully shutting down
+2021/12/18 19:40:20 [notice] 30#30: exiting
+2021/12/18 19:40:20 [notice] 31#31: gracefully shutting down
+2021/12/18 19:40:20 [notice] 30#30: exit
+2021/12/18 19:40:20 [notice] 31#31: exiting
+2021/12/18 19:40:20 [notice] 31#31: exit
+2021/12/18 19:40:20 [notice] 1#1: signal 17 (SIGCHLD) received from 30
+2021/12/18 19:40:20 [notice] 1#1: worker process 30 exited with code 0
+2021/12/18 19:40:20 [notice] 1#1: signal 29 (SIGIO) received
+2021/12/18 19:40:20 [notice] 1#1: signal 17 (SIGCHLD) received from 31
+2021/12/18 19:40:20 [notice] 1#1: worker process 31 exited with code 0
+2021/12/18 19:40:20 [notice] 1#1: exit
+2021/12/18 20:10:51 [notice] 1#1: using the "epoll" event method
+2021/12/18 20:10:51 [notice] 1#1: nginx/1.21.4
+2021/12/18 20:10:51 [notice] 1#1: built by gcc 10.2.1 20210110 (Debian 10.2.1-6) 
+2021/12/18 20:10:51 [notice] 1#1: OS: Linux 5.10.76-linuxkit
+2021/12/18 20:10:51 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2021/12/18 20:10:51 [notice] 1#1: start worker processes
+2021/12/18 20:10:51 [notice] 1#1: start worker process 30
+2021/12/18 20:10:51 [notice] 1#1: start worker process 31
+2021/12/18 20:15:58 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2021/12/18 20:15:58 [notice] 30#30: gracefully shutting down
+2021/12/18 20:15:58 [notice] 30#30: exiting
+2021/12/18 20:15:58 [notice] 31#31: gracefully shutting down
+2021/12/18 20:15:58 [notice] 30#30: exit
+2021/12/18 20:15:58 [notice] 31#31: exiting
+2021/12/18 20:15:58 [notice] 31#31: exit
+2021/12/18 20:15:58 [notice] 1#1: signal 17 (SIGCHLD) received from 30
+2021/12/18 20:15:58 [notice] 1#1: worker process 30 exited with code 0
+2021/12/18 20:15:58 [notice] 1#1: signal 29 (SIGIO) received
+2021/12/18 20:15:58 [notice] 1#1: signal 17 (SIGCHLD) received from 31
+2021/12/18 20:15:58 [notice] 1#1: worker process 31 exited with code 0
+2021/12/18 20:15:58 [notice] 1#1: exit
+2021/12/18 20:16:06 [notice] 1#1: using the "epoll" event method
+2021/12/18 20:16:06 [notice] 1#1: nginx/1.21.4
+2021/12/18 20:16:06 [notice] 1#1: built by gcc 10.2.1 20210110 (Debian 10.2.1-6) 
+2021/12/18 20:16:06 [notice] 1#1: OS: Linux 5.10.76-linuxkit
+2021/12/18 20:16:06 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2021/12/18 20:16:06 [notice] 1#1: start worker processes
+2021/12/18 20:16:06 [notice] 1#1: start worker process 31
+2021/12/18 20:16:06 [notice] 1#1: start worker process 32
+2021/12/28 15:16:29 [notice] 1#1: using the "epoll" event method
+2021/12/28 15:16:29 [notice] 1#1: nginx/1.21.4
+2021/12/28 15:16:29 [notice] 1#1: built by gcc 10.2.1 20210110 (Debian 10.2.1-6) 
+2021/12/28 15:16:29 [notice] 1#1: OS: Linux 5.10.76-linuxkit
+2021/12/28 15:16:29 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2021/12/28 15:16:29 [notice] 1#1: start worker processes
+2021/12/28 15:16:29 [notice] 1#1: start worker process 30
+2021/12/28 15:16:29 [notice] 1#1: start worker process 31
