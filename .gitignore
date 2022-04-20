@@ -1,3 +1,5 @@
 /docker/mysql/db/*
 /bomber/*
 /.idea/*
+/docker/nginx/access.log
+/docker/nginx/error.log

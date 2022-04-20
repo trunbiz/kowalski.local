@@ -6,7 +6,7 @@ services:
       context: docker/php
       dockerfile: php.Dockerfile
     volumes:
-      - "../source/kowalski:/var/www/html/kowalski"
+      - "../kowalski:/var/www/html/kowalski"
       - "../source/rendervn:/var/www/html/rendervn"
       - "../source/zemoum.com:/var/www/html/zemoum.com"
       - "../source/moonfarm:/var/www/html/moonfarm"
@@ -24,7 +24,7 @@ services:
     - "./docker/nginx/default.conf:/etc/nginx/conf.d/default.conf"
     - "./docker/nginx/render.conf:/etc/nginx/conf.d/render.conf"
     - "./docker/nginx:/var/log/nginx/"
-    - "../source/kowalski:/var/www/html/kowalski"
+    - "../kowalski:/var/www/html/kowalski"
     - "../source/rendervn:/var/www/html/rendervn"
   mysql:
     image: mysql:8.0
