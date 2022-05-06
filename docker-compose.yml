@@ -7,12 +7,12 @@ services:
       dockerfile: php.Dockerfile
     volumes:
       - "../kowalski:/var/www/html/kowalski"
-      - "../source/rendervn:/var/www/html/rendervn"
-      - "../source/zemoum.com:/var/www/html/zemoum.com"
-      - "../source/moonfarm:/var/www/html/moonfarm"
-      - "../source/wallet-backend:/var/www/html/wallet-backend"
-      - "./docker/php/supervisord.conf:/etc/supervisor/conf.d/supervisord.conf"
-      - "./docker/app/src:/app/src"
+#      - "../source/rendervn:/var/www/html/rendervn"
+#      - "../source/zemoum.com:/var/www/html/zemoum.com"
+#      - "../source/moonfarm:/var/www/html/moonfarm"
+#      - "../source/wallet-backend:/var/www/html/wallet-backend"
+#      - "./docker/php/supervisord.conf:/etc/supervisor/conf.d/supervisord.conf"
+#      - "./docker/app/src:/app/src"
     tty: true
   nginx:
     image: nginx:latest
@@ -25,7 +25,7 @@ services:
     - "./docker/nginx/render.conf:/etc/nginx/conf.d/render.conf"
     - "./docker/nginx:/var/log/nginx/"
     - "../kowalski:/var/www/html/kowalski"
-    - "../source/rendervn:/var/www/html/rendervn"
+#    - "../source/rendervn:/var/www/html/rendervn"
   mysql:
     image: mysql:8.0
     container_name: mysql
