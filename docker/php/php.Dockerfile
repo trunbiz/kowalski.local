@@ -1,4 +1,4 @@
-FROM php:7.4-fpm
+FROM php:7.3-fpm
 
 RUN apt-get update && apt-get install -y \
     libmcrypt-dev \
@@ -41,6 +41,14 @@ RUN sh -c "$(curl https://raw.githubusercontent.com/deluan/zsh-in-docker/master/
 ## Install Kafka
 #RUN apt-get update && pecl install rdkafka
 
+## Install Extension
+RUN docker-php-ext-install sockets
+
+RUN apt-get update -y \
+  && apt-get install -y \
+     libxml2-dev \
+  && apt-get clean -y \
+  && docker-php-ext-install soap
 
 COPY config/php.ini /usr/local/etc/php/
 

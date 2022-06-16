@@ -7,12 +7,12 @@ services:
       dockerfile: php.Dockerfile
     volumes:
       - "../kowalski:/var/www/html/kowalski"
-#      - "../source/rendervn:/var/www/html/rendervn"
-#      - "../source/zemoum.com:/var/www/html/zemoum.com"
-#      - "../source/moonfarm:/var/www/html/moonfarm"
-#      - "../source/wallet-backend:/var/www/html/wallet-backend"
+      - "../webDemo:/var/www/html/webDemo"
+      - "../wallet-integrate:/var/www/html/wallet-integrate"
+      - "../wallet-core:/var/www/html/wallet-core"
+      - "../wallet-backend:/var/www/html/wallet-backend"
 #      - "./docker/php/supervisord.conf:/etc/supervisor/conf.d/supervisord.conf"
-#      - "./docker/app/src:/app/src"
+      - "./docker/app/src:/app/src"
     tty: true
   nginx:
     image: nginx:latest
@@ -22,10 +22,15 @@ services:
     - "443:443"
     volumes:
     - "./docker/nginx/default.conf:/etc/nginx/conf.d/default.conf"
-    - "./docker/nginx/render.conf:/etc/nginx/conf.d/render.conf"
-    - "./docker/nginx:/var/log/nginx/"
+    - "./docker/nginx/wallet-backend.conf:/etc/nginx/conf.d/wallet-backend.conf"
+    - "./docker/nginx/wallet-bank.conf:/etc/nginx/conf.d/wallet-bank.conf"
+    - "./docker/nginx/wallet-api.conf:/etc/nginx/conf.d/wallet-api.conf"
+    - "./docker/nginx:/var/log/nginx/conf.d"
     - "../kowalski:/var/www/html/kowalski"
-#    - "../source/rendervn:/var/www/html/rendervn"
+    - "../webDemo:/var/www/html/webDemo"
+    - "../wallet-integrate:/var/www/html/wallet-integrate"
+    - "../wallet-core:/var/www/html/wallet-core"
+    - "../wallet-backend:/var/www/html/wallet-backend"
   mysql:
     image: mysql:8.0
     container_name: mysql
@@ -45,6 +50,15 @@ services:
       - "./docker/mysql/query.log:/var/log/query.log"
     ports:
     - "3306:3306"
+  mongodb:
+    image: mongo:latest
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: root
+      MONGO_INITDB_ROOT_PASSWORD: root
+    ports:
+    - 27017:27017
+    volumes:
+    - ./docker/mongodb_data:/data/db
 #  redis:
 #    image: redis
 #    container_name: redis
