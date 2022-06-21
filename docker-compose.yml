@@ -51,10 +51,12 @@ services:
     ports:
     - "3306:3306"
   mongodb:
+    container_name: mongodb
     image: mongo:latest
-    environment:
-      MONGO_INITDB_ROOT_USERNAME: root
-      MONGO_INITDB_ROOT_PASSWORD: root
+#    environment:
+#      MONGO_INITDB_ROOT_USERNAME: root
+#      MONGO_INITDB_ROOT_PASSWORD: root
+#      MONGO_INITDB_DATABASE: mongo_kowalski
     ports:
     - 27017:27017
     volumes:
