@@ -50,6 +50,10 @@ RUN sh -c "$(curl https://raw.githubusercontent.com/deluan/zsh-in-docker/master/
 #  && apt-get clean -y \
 #  && docker-php-ext-install soap
 
+# Install mongo
+RUN pecl install mongodb \
+&& echo "extension=mongodb.so" > /usr/local/etc/php/conf.d/ext-mongodb.ini
+
 COPY config/php.ini /usr/local/etc/php/
 
 #ADD etc/docker-php.ini $PHP_INI_DIR/conf.d/
